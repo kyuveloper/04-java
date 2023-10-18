@@ -13,7 +13,7 @@ public class Application02 {
         /* 변수에는 자료형이 존재한다.
         * 자료형이란? 다양한 값의 형태별로 어느 정도의 크기를 하나의 값으로 취급할 것인지 미리 Compiler와 약속한 키워드이다.
         * 예) 앞에서 사용한 int 자료형은 정수 4type 만큼을 읽어서 하나의 값으로 취급하곘다는 약속이다.
-        *     이러한 자료형은 기본 자료형(Primary Type)과 참조 자료형(Reference Type)으로 나뉘어 진다.
+        *     이러한 자료형은 기본 자료형(Primitive Type)과 참조 자료형(Reference Type)으로 나뉘어 진다.
         * 그 중 기본 자료형 8가지를 먼저 확인한다.
         * */
 
@@ -105,7 +105,7 @@ public class Application02 {
         /* 목차 3-3 대입연산자의 왼쪽과 오른쪽 사용하기 */
         point = point + 100;
         System.out.println("point = point + 100 ? " + point);
-        
+
 
     }
 }

@@ -68,6 +68,40 @@ public class Quiz {
         System.out.println(can_ride1);
         System.out.println(can_ride2);
 
+        System.out.println("=======================================================");
+
+        // ch1 = X, ch2 = Z 일때 그 값을 비교한 후 참이면 "참", 거짓이면 "거짓"으로 출력할 것
+        char ch1 = 'X';
+        char ch2 = 'Z';
+        String result4 = (ch1 == ch2)? "참" : "거짓";
+        System.out.println(result4);
+
+        System.out.println("=======================================================");
+        // 자신의 나이를 집어넣고 20 보다 작으면 미성년자, 20보다 높으면 성인이 출력되도록 한다
+
+        int my_age = 30;
+        String result5 = (my_age < 20)? "미성년자" : "성인";
+        System.out.println(result5);
+
+        System.out.println("=======================================================");
+        // 길동이의 첫달 월급은 100만원이다
+        // 짝수달은 10프로 보너스를 받고, 홀수달은 15프로 보너스를 받는다
+        // 길동이 연봉은? 출력 내용 = 길동이의 연봉은 XX만원입니다
+        int gildong = 100;
+        int month1357911 = gildong + (int)(gildong*0.1);
+        int month24681012 = gildong + (int)(gildong*0.15);
+        int total = ((month1357911)*6)+((month24681012)*6);
+        System.out.println("길동이의 연봉은 " + total + "만원입니다.");
+
+        System.out.println("=======================================================");
+        // 삼항연산자를 이용해 한 강아지의 아이큐가 60보다 낮으면 똥개 . 60보다 높으면 천재견을 출력해라.
+        // 강아지 '백구'의 아이큐는 200이다.
+        // 보여지는 출력은 다음과 같다
+        // "백구의 아이큐는 200 이므로 (똥개/천재견) 이다.
+        int my_dog = 200;
+        String result6 = (my_dog > 60)? "천재견" : "똥개";
+        System.out.println("백구의 아이큐는 " + my_dog + " 이므로 " + result6 + "이다.");
+
 
 
     }

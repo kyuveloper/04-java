@@ -31,11 +31,10 @@ public class Quiz {
         int wine = 36;
         int goryang = 27;
         int tax_price = (int)((soju+beer+wine+goryang)*0.1);
-        double after_tax = 0.9;
         int total_per_week = 140;
         int this_week_total = (soju+beer+wine+goryang);
         int this_week_avrg = (soju+beer+wine+goryang)/4;
-        int this_week = (int)((soju+beer+wine+goryang)*after_tax);
+        int this_week = (int)((soju+beer+wine+goryang)*0.9);
         System.out.println("A마트 이번주 주류 당 평균 실적은 " + this_week_avrg + "만원이고, 세금을 제외한 총 매출은 " + this_week + "만원이며 " + "세금은 " + tax_price + "만원을 냈다.");
         String result2 = (this_week_total > total_per_week)? "높다" : "낮다";
         System.out.println(result2);

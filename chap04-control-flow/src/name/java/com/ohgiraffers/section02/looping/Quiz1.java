@@ -17,6 +17,8 @@ public class Quiz1 {
 
         /*qp.report();*/
 
-        qp.upDown();
+        /*qp.upDown();*/
+
+        qp.gugudan2();
     }
 }

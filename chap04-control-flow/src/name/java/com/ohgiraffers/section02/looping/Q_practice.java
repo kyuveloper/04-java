@@ -195,7 +195,7 @@ public class Q_practice {
                 exit = false;
             }
         }while(exit);*/
-        //위에가 내가 쓴, 아래가 ai 생성 코드
+
 
         Random ranNum = new Random();
         Scanner sc = new Scanner(System.in);
@@ -220,7 +220,7 @@ public class Q_practice {
             }
 
             System.out.println("다시 시작하시겠습니까? (yes/no)");
-            sc.nextLine();  // 버퍼 비우기
+            sc.nextLine();
             String conGame = sc.nextLine();
 
             if (conGame.equals("no")) {
@@ -230,6 +230,32 @@ public class Q_practice {
 
 
 
+    }
+
+    public void gugudan2() {
+        Scanner scanner = new Scanner(System.in);
+        int n;
+
+        do {
+            System.out.print("몇 단까지 출력하시겠습니까? (1 이상, 9 이하 입력): ");
+            n = scanner.nextInt();
+
+            if (n < 1 || n > 9) {
+                System.out.println("1 이상 9 이하의 값을 입력해주세요.");
+            }
+        } while (n < 1 || n > 9);
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
+
+            System.out.println(i + "단");
+            for (int j = 1; j <= 9; j++) {
+                System.out.println(i + " X " + j + " = " + (i * j));
+            }
+            System.out.println();
+        }
     }
 
 }

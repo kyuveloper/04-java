@@ -12,15 +12,15 @@ public class Application01 {
          * 얕은 복사는 stack에 저장되어 있는 배열의 주소값만 복사한다는 것이다.
          * 따라서 두 개의 레퍼런스 변수는 동일한 배열의 주소값만 가지고 있다.
          * 하나의 레퍼런스 변수에 저장된 주소값을 가지고 배열의 내용을 수정(값 변경)을 하게되면
-         * 다른 레퍼런스 변수로 배열에 접근했을 때도 동일한 배열을 자리키고 있기 때문에 변경된 값이 반여되어있다.
+         * 다른 레퍼런스 변수로 배열에 접근했을 때도 동일한 배열을 가리키고 있기 때문에 변경된 값이 반영되어있다.
         * */
 
         int[] originArr = {1, 2, 3, 4, 5};
         int[] copyArr = originArr; // 동일한 주소값을 가지게된다. (origin이 변경되면 copy도 바뀜)
 
 
-        for (int x:copyArr /* x:originArr해도 값 동일함, 같은 주소를 써서 (얕은 복사) */) {
-            System.out.println(x);
+        for (int number:copyArr /* x:originArr해도 값 동일함, 같은 주소를 써서 (얕은 복사) */) {
+            System.out.println(number);
         }
 
         int[] deepCopy = new int[originArr.length];

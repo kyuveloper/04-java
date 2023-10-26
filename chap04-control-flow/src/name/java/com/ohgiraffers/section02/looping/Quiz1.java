@@ -13,12 +13,12 @@ public class Quiz1 {
         int num = sc.nextInt();
         qp.gugudan(num);*/
 
-        /*qp.star();*/
+        qp.star();
 
         /*qp.report();*/
 
         /*qp.upDown();*/
 
-        qp.gugudan2();
+        /*qp.gugudan2();*/
     }
 }

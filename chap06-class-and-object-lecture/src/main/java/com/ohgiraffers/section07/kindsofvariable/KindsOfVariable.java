@@ -21,7 +21,7 @@ public class KindsOfVariable {
         * */
         int localNum; // 지역변수
         System.out.println(num);
-        // System.out.println(localNum); 지역 변수는 반드시 초기화 해주어야 한다.
+        // System.out.println(localNum); //지역 변수는 반드시 초기화 해주어야 한다.
         System.out.println(globalNum); // 전역 변수는 기본값으로 초기화가 된다.
         System.out.println(staticNum);
 

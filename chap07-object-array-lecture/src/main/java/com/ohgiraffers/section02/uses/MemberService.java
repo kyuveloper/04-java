@@ -5,7 +5,7 @@ public class MemberService {
 
     public void signUpMembers() { // ((no==1)->2)
         // Member[] 배열의 size를 5로 만들어줌
-        Member[] members = new Member[5];
+        Member[] members = new Member[10];
         // Member 배열에 Member 클래스를 생셩하여 값을 넣어줌
         members[0] = new Member(1, "user01", "pass", "홍길동", 20, '남');
         members[1] = new Member(2, "user01", "pass", "유관순", 16, '여');

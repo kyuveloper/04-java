@@ -31,7 +31,7 @@ public class ApplicationMain {
 
         // People 객체를 heap에 생성하여 메소드를 실행할 수 있도록 준비함
         People people = new People();
-        Place place = new Place();
+
         boolean start = true;
         // 시작 화면
         while (start) {
@@ -45,14 +45,14 @@ public class ApplicationMain {
 
             int num = sc.nextInt();
 
-            switch (num) {
+            /*switch (num) {
                 case 1 : place.selectChok(); break;
                 case 2 : place.selectChok(); break;
                 case 3 : place.selectChok(); break;
                 case 0 : return;
                 default:
                     System.out.println("다시 입력해주세요."); break;
-            }
+            }*/
         }
 
 

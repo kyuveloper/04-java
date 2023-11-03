@@ -29,11 +29,17 @@ public class Application {
         test = null; 가능
         int a = null; 불가능*/
 
+        GenericTest<String> gt4 = new GenericTest<>();
+        gt4.setValue("asdas");
+
         GenericTest<String> gt2 = new GenericTest<String>(); // 생성하며 지정되면 변경 불가
         gt2.setValue("홍길동");
+        // gt2.setValue(new String("홍길동"));
         System.out.println(gt2.getValue());
         System.out.println(gt2.getValue() instanceof String);
 
+
+        System.out.println("===================");
         GenericTest gt3 = new GenericTest();
         gt3.setValue(new Double(1.5)); // 값을 넣을 때 동적으로 타입 지시
         System.out.println(gt3.getValue());

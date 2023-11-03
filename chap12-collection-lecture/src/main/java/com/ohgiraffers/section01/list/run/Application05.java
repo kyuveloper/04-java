@@ -27,7 +27,7 @@ public class Application05 {
 
         System.out.println(que);
         /*
-        * peek() : 가장 처음에 등어온 요소를 반환한다.
+        * peek() : 가장 처음에 들어온 요소를 반환한다.
         * pool() : 가장 처음에 들어온 요소를 반환 후 제거한다.
         * */
         System.out.println("peek : " + que.peek());

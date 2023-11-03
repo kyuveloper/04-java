@@ -1,6 +1,6 @@
 package main.java.com.ohgiraffers.section01.generic;
 
-public class GenericTest<T> /*<T> 추가하여 작성 T가 아니여도 되지만 대문자 T를 관례적으로 사용한다.*/{
+public class GenericTest<T> /*<T> 추가해서 작성, T가 아니여도 되지만 대문자 T를 관례적으로 사용한다.*/{
 
     private T value;
 
